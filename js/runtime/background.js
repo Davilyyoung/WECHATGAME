@@ -3,9 +3,9 @@ import Sprite from '../base/sprite'
 const screenWidth = window.innerWidth
 const screenHeight = window.innerHeight
 
-const BG_IMG_SRC = 'images/bg.jpg'
-const BG_WIDTH = 512
-const BG_HEIGHT = 512
+const BG_IMG_SRC = 'res/bg/images/gounannv.jpg'
+const BG_WIDTH = 0
+const BG_HEIGHT = 0
 
 /**
  * 游戏背景类

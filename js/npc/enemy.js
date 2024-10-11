@@ -1,9 +1,19 @@
 import Animation from '../base/animation'
 import DataBus from '../databus'
 
-const ENEMY_IMG_SRC = 'images/enemy.png'
-const ENEMY_WIDTH = 60
-const ENEMY_HEIGHT = 60
+const ENEMY_FRAMES = [
+  'res/moster/B1/wait/images/monster_wait_001.png',
+  'res/moster/B1/wait/images/monster_wait_002.png',
+  'res/moster/B1/wait/images/monster_wait_003.png',
+  'res/moster/B1/wait/images/monster_wait_004.png',
+  'res/moster/B1/wait/images/monster_wait_005.png',
+  'res/moster/B1/wait/images/monster_wait_006.png',
+  'res/moster/B1/wait/images/monster_wait_007.png',
+  'res/moster/B1/wait/images/monster_wait_008.png'
+];
+
+const ENEMY_WIDTH = 256
+const ENEMY_HEIGHT = 222
 
 const __ = {
   speed: Symbol('speed')
@@ -17,7 +27,7 @@ function rnd(start, end) {
 
 export default class Enemy extends Animation {
   constructor() {
-    super(ENEMY_IMG_SRC, ENEMY_WIDTH, ENEMY_HEIGHT)
+    super(ENEMY_FRAMES[0], ENEMY_WIDTH, ENEMY_HEIGHT)
 
     this.initExplosionAnimation()
   }
