@@ -1,5 +1,5 @@
 import Sprite from '../base/sprite';
-import { MONSTER_TYPES } from './monsterConfig';  // 引入配置文件
+import { MONSTER_TYPES } from './enemyConfig';  // 引入配置文件
 import { getCenteredTopMonsterPosition } from '../enemyPlace/monsterPosition';  // 引入坐标函数
 
 export default class Enemy extends Sprite {
